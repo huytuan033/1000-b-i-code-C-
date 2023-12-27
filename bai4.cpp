@@ -45,7 +45,7 @@ class Sum: public TinhToan
         double tinhtoan() override
         {
             double sum= 0.0f;
-            for(int i= 1; i<= n; i++)
+            for(int i= 0; i<= n; i++)
             {
                 sum+= 1.0f/(2* i);
             }
