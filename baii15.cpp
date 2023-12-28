@@ -17,7 +17,7 @@ class TinhToan
         //phương thức trừu tượng
         virtual float tinhtoan()= 0;
 
-        //hàm lấy giá trị của x và n
+        //hàm lấy giá trị của n
         int giatriN()
         {
             return n;
