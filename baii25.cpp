@@ -33,19 +33,15 @@ class KetQua: public Number
 
         void number() override
         {
-            bool check= false;
+            int sum= 0;
             for(int i= 1; i<= n; i++)
             {
                 if(n%i==0 && i%2==0)
                 {
-                    cout<< " "<< i;
-                    check= true;
+                    sum+=i;
                 }
             }
-            if(!check)
-            {
-                cout<<" khong co uoc so chan"<<endl;
-            }
+            cout<< sum<<endl;
         }
 };
 
@@ -54,7 +50,7 @@ int main()
     int n;
     cin>> n;
     KetQua ketqua(n);
-    cout << "Cac uoc so le cua " << n << " la: ";
+    cout << "Tong cua cac uoc chan cua " << n << " la: ";
     ketqua.number();
     cout << endl;
     return 0;
